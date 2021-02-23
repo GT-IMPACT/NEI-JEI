@@ -148,7 +148,7 @@ public class BookmarkPanel extends ItemPanel {
 
     @Override
     public int getNextX(GuiContainer gui) {
-        return gui.width - prev.w - 2 - ((gui.xSize + gui.width) /2 + 2);
+        return gui.width - prev.w - 2 - ((gui.xSize + gui.width) /2 + 2) - 16;
     }
 
     @Override
@@ -158,7 +158,7 @@ public class BookmarkPanel extends ItemPanel {
 
     @Override
     public int getPageX(GuiContainer gui) {
-        return gui.guiLeft * 3 / 2 + gui.xSize + 1 - ((gui.xSize + gui.width) /2 + 2);
+        return gui.guiLeft * 3 / 2 + gui.xSize + 1 - ((gui.xSize + gui.width) / 2 + 2) - 16;
     }
 
     public int getHightAdjustment() {
@@ -166,8 +166,7 @@ public class BookmarkPanel extends ItemPanel {
     }
 
     public int getWidth(GuiContainer gui) {
-        return LayoutManager.getLeftSize(gui) - ( (gui.xSize + gui.width) / 2 + 3 );
-
+        return LayoutManager.getLeftSize(gui) - ( (gui.xSize + gui.width) / 2 + 3 ) - 16;
     }
 
 }
